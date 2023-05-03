@@ -18,7 +18,7 @@ variable "tag" {
   default = "Docker-Instance"
 }
 
-variable "server-name" {  // hostname olacak  makina içine girince göreceği
+variable "server-name" {  // hostname olacak  makina içine girince göreceğiz
   type = string
   default = "docker-instance"
 }
