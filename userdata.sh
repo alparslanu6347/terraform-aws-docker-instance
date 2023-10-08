@@ -1,4 +1,5 @@
 #!/bin/bash
+# install docker and docker-compose
 hostnamectl set-hostname ${server-name}
 yum update -y
 amazon-linux-extras install docker -y

@@ -1,11 +1,12 @@
 // https://developer.hashicorp.com/terraform/tutorials/configuration-language/variables
 variable "instance_type" {
   type = string
-  default = "t2.micro"
+  default = "t2.micro"    // you can change -->> t3a.medium
 }
 
 variable "key_name" {
   type = string
+  default = "arrow"   // you can change -->> *********
 }
 
 variable "num_of_instance" {
@@ -18,7 +19,7 @@ variable "tag" {
   default = "Docker-Instance"
 }
 
-variable "server-name" {  // hostname olacak  makina içine girince göreceğiz
+variable "server-name" {  // your hostname, you'll see when you connect via ssh remote
   type = string
   default = "docker-instance"
 }
