@@ -6,7 +6,6 @@ variable "instance_type" {
 
 variable "key_name" {
   type = string
-  default = "arrow"   // write your key_name
 }
 
 variable "num_of_instance" {
