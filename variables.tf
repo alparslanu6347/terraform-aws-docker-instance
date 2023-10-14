@@ -6,7 +6,7 @@ variable "instance_type" {
 
 variable "key_name" {
   type = string
-  default = "arrow"   // you can change -->> *********
+  default = "arrow"   // write your key_name
 }
 
 variable "num_of_instance" {
@@ -19,7 +19,7 @@ variable "tag" {
   default = "Docker-Instance"
 }
 
-variable "server-name" {  // your hostname, you'll see when you connect via ssh remote
+variable "server-name" {  // your hostname, you'll see when you connect via ssh
   type = string
   default = "docker-instance"
 }
