@@ -1,7 +1,6 @@
-// https://developer.hashicorp.com/terraform/tutorials/configuration-language/variables
 variable "instance_type" {
   type = string
-  default = "t2.micro"    // you can change -->> t3a.medium
+  default = "t2.micro"
 }
 
 variable "key_name" {
@@ -18,12 +17,12 @@ variable "tag" {
   default = "Docker-Instance"
 }
 
-variable "server-name" {  // your hostname, you'll see when you connect via ssh
+variable "server-name" {
   type = string
   default = "docker-instance"
 }
 
-variable "docker-instance-ports" {  // https://developer.hashicorp.com/terraform/tutorials/configuration-language/variables
+variable "docker-instance-ports" {
   type = list(number)
   description = "docker-instance-sec-gr-inbound-rules"
   default = [22, 80, 8080]

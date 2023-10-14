@@ -7,5 +7,5 @@ output "sec_gr_id" {
 }
 
 output "instance_id" {
-  value = aws_instance.tfmyec2.*.id   // because of the line "count = var.num_of_instance" in main.tf   we use ==>> *
+  value = aws_instance.tfmyec2.*.id
 }
