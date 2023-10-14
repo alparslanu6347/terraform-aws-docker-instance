@@ -1,6 +1,7 @@
 variable "instance_type" {
   type = string
   default = "t2.micro"
+  description = "Amazon Linux 2023"
 }
 
 variable "key_name" {
