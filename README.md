@@ -1,4 +1,5 @@
-# Terraform Module to provision an AWS EC2 instance with the latest amazon linux 2 ami and installed docker in it.
+# Terraform Module to provision an AWS EC2 instance with the latest Amazon linux 2023 ami and installed docker in it.
+
 - userdata includes docker & docker-compose install
 
 - Not intended for production use. It is an example module.
