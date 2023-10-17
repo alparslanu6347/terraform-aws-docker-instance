@@ -14,7 +14,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-module "docker_instance" {
+module "docker-instance" {
     source = "alparslanu6347/docker-instance/aws"
     key_name = "mykey"
 }
