@@ -1,3 +1,4 @@
+# Amazon Linux 2023
 data "aws_ami" "amazon-linux-2023" {
   owners      = ["amazon"]
   most_recent = true
