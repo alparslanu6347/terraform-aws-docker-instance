@@ -1,30 +1,34 @@
 variable "instance_type" {
-  type = string
-  default = "t2.micro"
+  type        = string
+  default     = "t2.micro"
   description = "Amazon Linux 2023"
 }
 
 variable "key_name" {
-  type = string
+  description = "The name of the SSH key pair. This is a required input, and there is no default value."
+  type        = string
 }
 
 variable "num_of_instance" {
-  type = number
-  default = 1
+  description = "Number of instances"
+  type        = number
+  default     = 1
 }
 
 variable "tag" {
-  type = string
-  default = "Docker-Instance"
+  description = "Tag of the AWS Linux 2023 EC2"
+  type        = string
+  default     = "Docker-Instance"
 }
 
 variable "server-name" {
-  type = string
-  default = "docker-instance"
+  description = "Hostname of the server"
+  type        = string
+  default     = "docker-instance"
 }
 
 variable "docker-instance-ports" {
-  type = list(number)
   description = "docker-instance-sec-gr-inbound-rules"
-  default = [22, 80, 8080]
+  type        = list(number)
+  default     = [22, 80, 8080]
 }
